@@ -22,4 +22,4 @@ def process_request():
 
 if __name__ == '__main__':
     print('start')
-    app.run(debug=False, host='90.153.255.27', port=5000, ssl_context='adhoc')
+    app.run(debug=False, port=5000, ssl_context='adhoc')
