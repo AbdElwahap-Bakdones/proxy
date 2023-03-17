@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 # import requests
 
 app = Flask(__name__)
+app.config['SERVER_NAME'] = 'proxyMessage.com'
 
 
 @app.route('/proxy', methods=['POST', 'GET'])
