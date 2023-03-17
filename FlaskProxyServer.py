@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SERVER_NAME'] = 'proxyMessage.com'
 
 
-@app.route('/proxy', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def process_request():
     print(request.headers)
     # Check if the request is coming from a specific domain
