@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/proxy', methods=['POST', 'GET'])
 def process_request():
     print(request.headers)
     # Check if the request is coming from a specific domain
@@ -22,4 +22,4 @@ def process_request():
 
 if __name__ == '__main__':
     print('start')
-    app.run(debug=False, host='90.153.255.27', port=5000)
+    app.run(debug=False, host='90.153.255.27')
